@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wdhi</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        h1{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            text-align:center;
+            line-height: 200px;
+            color: white;
+            border-radius: 50%;
+            margin: 200px auto;
+        }
+        p{
+            width: 200px;
+            height: 200px;
+            color: brown;
+            display: grid;
+            place-items: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="c" onclick="count++">我太虚了
+    快点</h1>
+
+    <p>老废你就不用点了怎么点都一样。</p>
+    <script>
+        //计时
+        let count = 0
+        //定时器 3秒后停止
+        setTimeout(()=>{
+            alert("时间到了,你一共点击了"+count+"次");
+
+        },3000)
+    </script>
+</body>
+</html>
